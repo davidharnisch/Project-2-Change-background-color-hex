@@ -28,7 +28,7 @@ function makeid(length) {
    return result;
 }
 
-console.log(makeid(6));
+
 
 function random_bg_color() {
 var bgColor = "#" + (makeid(6));
@@ -36,11 +36,21 @@ document.body.style.backgroundColor = bgColor;
 
 console.log(bgColor);
 
+var tostring = String(bgColor);
+
+document.getElementById("addtext").innerHTML = tostring;
+
 }
 
 
 
 document.getElementById('test').onclick = random_bg_color; 
+
+// Add hex code to heading
+
+
+// var textToAdd = document.createTextNode(fString);
+// parElement.appendChild(textToAdd);
 
 
 
